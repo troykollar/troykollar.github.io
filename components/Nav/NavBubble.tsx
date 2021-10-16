@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FunctionComponent } from "react";
 import { useState, useEffect } from "react";
-import styles from "../../styles/NavBubble/NavBubble.module.scss";
+import styles from "../../styles/Nav/NavBubble/NavBubble.module.scss";
 import { NavRing } from "./NavRing";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 

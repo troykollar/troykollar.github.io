@@ -3,12 +3,13 @@ import type { AppProps } from "next/app";
 import { RiMoonLine } from "react-icons/ri";
 
 import NavBubble from "../components/Nav/NavBubble";
+import Name from "../components/Nav/Name";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="app">
       <div className="nav-bar dark">
-        <div className="name-text">Troy Kollar</div>
+        <Name text="Troy Kollar" />
         <NavBubble />
         <RiMoonLine size={40} />
       </div>

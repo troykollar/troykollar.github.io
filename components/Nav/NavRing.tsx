@@ -7,7 +7,7 @@ import {
 } from "react";
 import Link from "next/link";
 
-import styles from "../../styles/NavBubble/NavRing.module.scss";
+import styles from "../../styles/Nav/NavBubble/NavRing.module.scss";
 
 interface NavRingProps {
   active: boolean;
