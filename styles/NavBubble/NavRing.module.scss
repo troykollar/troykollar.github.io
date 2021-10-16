@@ -1,0 +1,40 @@
+$darkBg: white;
+$darkColor: #333;
+
+$lightBg: #333;
+$lightColor: white;
+
+.navRing {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 15px;
+
+  border: 1px solid $darkColor;
+  transform: scale(0);
+  transition: transform 0.2s;
+
+  background-color: $darkBg;
+  color: $darkColor;
+
+  &.active {
+    transform: scale(1);
+  }
+
+  &.light {
+    background-color: $lightBg;
+    color: $lightColor;
+  }
+
+  &.dark {
+    background-color: $darkBg;
+    color: $darkColor;
+  }
+
+  &:hover {
+    background-color: $lightBg;
+    color: $lightColor;
+  }
+}

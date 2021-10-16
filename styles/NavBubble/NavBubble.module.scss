@@ -1,0 +1,39 @@
+$darkBg: white;
+$darkColor: #333;
+
+$lightBg: #333;
+$lightColor: white;
+
+.circleContainer {
+  position: absolute;
+  z-index: 10;
+  left: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBubble {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+
+  &.light {
+    background-color: $lightBg;
+    color: $lightColor;
+  }
+
+  &.dark {
+    background-color: $darkBg;
+    color: $darkColor;
+  }
+
+  &.active {
+    border: 2px solid $darkColor;
+  }
+}
