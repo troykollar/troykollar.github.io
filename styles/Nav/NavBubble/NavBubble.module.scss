@@ -7,14 +7,15 @@ $lightColor: white;
 .circleContainer {
   position: absolute;
   z-index: 10;
-  left: 50vw;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .navBubble {
-  position: relative;
+  position: absolute;
   height: 60px;
   width: 60px;
   border-radius: 60px;
