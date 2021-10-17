@@ -8,8 +8,6 @@ import styles from "../styles/Home/Home.module.scss";
 import selfImg from "../assets/self.jpg";
 import Footer from "components/Footer/Footer";
 
-import { RiLinkedinBoxFill, RiGithubFill, RiMailFill } from "react-icons/ri";
-
 const Home: NextPage = () => {
   return (
     <div className={styles.home}>
@@ -69,25 +67,7 @@ const Home: NextPage = () => {
         </p>
       </section>
 
-      <Footer
-        links={[
-          {
-            href: "https://www.linkedin.com/in/troy-kollar-571910158",
-            title: "LinkedIn",
-            icon: RiLinkedinBoxFill,
-          },
-          {
-            href: "https://github.com/troykollar",
-            title: "GitHub",
-            icon: RiGithubFill,
-          },
-          {
-            href: "mailto: troykollar@gmail.com",
-            title: "Email",
-            icon: RiMailFill,
-          },
-        ]}
-      />
+      <Footer />
     </div>
   );
 };
