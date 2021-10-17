@@ -37,8 +37,8 @@ const Home: NextPage = () => {
       />
       <section className={styles.description}>
         <p>
-          My name is Troy Kollar. I am a full stack developer. I primarily work
-          in typescript and javascript.
+          My name is Troy Kollar. I am a full stack developer working primarily
+          in Typescript and Javascript.
         </p>
 
         <p>
