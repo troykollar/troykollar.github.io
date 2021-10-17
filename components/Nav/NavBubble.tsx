@@ -19,8 +19,8 @@ const NavBubble: FunctionComponent<NavBubbleProps> = () => {
       <NavRing
         active={active}
         ringNum={4}
-        text="Contact"
-        to="/contact"
+        text="Info"
+        to="/info"
         click={closeBubble}
       />
       <NavRing
@@ -33,8 +33,8 @@ const NavBubble: FunctionComponent<NavBubbleProps> = () => {
       <NavRing
         active={active}
         ringNum={2}
-        text="Professional"
-        to="/professional"
+        text="Work"
+        to="/work"
         click={closeBubble}
       />
       <NavRing
@@ -46,7 +46,7 @@ const NavBubble: FunctionComponent<NavBubbleProps> = () => {
       />
 
       <div
-        className={`${styles.navBubble} ${styles["dark"]} ${styles.active}`}
+        className={`${styles.navBubble} ${active ? styles.active : ""}`}
         onClick={() => setActive(!active)}
       >
         {!active && <RiMenuLine size={20} />}

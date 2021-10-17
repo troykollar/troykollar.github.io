@@ -30,7 +30,11 @@ const Home: NextPage = () => {
           "a hobbyist.",
         ]}
       />
-      <img className={styles.selfImg} src={selfImg.src} />
+      <img
+        className={`noselect ${styles.selfImg}`}
+        src={selfImg.src}
+        alt="A very handsome individual."
+      />
       <section className={styles.description}>
         <p>
           My name is Troy Kollar. I am a full stack developer. I primarily work

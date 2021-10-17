@@ -7,7 +7,7 @@ import Name from "../components/Nav/Name";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="app">
+    <div className="app dark">
       <div className="nav-bar dark">
         <Name text="Troy Kollar" />
         <NavBubble />

@@ -23,18 +23,16 @@ $lightColor: white;
   justify-content: center;
   align-items: center;
   transition: all 0.4s;
+  background-color: white;
+  color: $darkColor;
 
   &.light {
     background-color: $lightBg;
     color: $lightColor;
   }
 
-  &.dark {
-    background-color: $darkBg;
-    color: $darkColor;
-  }
-
   &.active {
-    border: 2px solid $darkColor;
+    background-color: $darkColor;
+    color: $darkBg;
   }
 }

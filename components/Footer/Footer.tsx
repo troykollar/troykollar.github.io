@@ -9,14 +9,18 @@ interface FooterProps {
 }
 
 const Footer: FunctionComponent<FooterProps> = ({ links }) => {
-  console.log(links);
   return (
     <div className={styles.footer}>
       <h4>Links</h4>
       <div className={styles.spacer}></div>
       <div className={styles.footerLinks}>
         {links.map((link) => (
-          <FooterLink href={link.href} title={link.title} icon={link.icon} />
+          <FooterLink
+            href={link.href}
+            title={link.title}
+            icon={link.icon}
+            key={link.href}
+          />
         ))}
       </div>
     </div>

@@ -43,7 +43,6 @@ const Ima: FunctionComponent<ImaProps> = ({ text }) => {
 
       return () => {
         timeouts.forEach((timeout) => {
-          console.log(timeout);
           clearTimeout(timeout);
         });
       };
@@ -54,10 +53,7 @@ const Ima: FunctionComponent<ImaProps> = ({ text }) => {
     shownText += "f";
   }
 
-  useEffect(() => {
-    console.log("idk");
-  }, []);
-  return <h2>I am {curText}</h2>;
+  return <h2 className="noselect">I am {curText}</h2>;
 };
 
 export default Ima;

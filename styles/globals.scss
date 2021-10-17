@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
+@import "@/styles/variables.scss";
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: black;
+  background-color: $darkBg;
   color: white;
+}
+
+.noselect {
+  user-select: none;
 }
 
 .nav-bar {
@@ -21,13 +26,13 @@ body {
   padding-right: 20px;
 
   &.light {
-    background-color: white;
-    color: #333;
+    background-color: $lightBg;
+    color: $lightColor;
   }
 
   &.dark {
-    background-color: #333;
-    color: white;
+    background-color: $darkAccent;
+    color: $darkColor;
   }
 }
 
