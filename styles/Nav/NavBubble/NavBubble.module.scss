@@ -1,8 +1,4 @@
-$darkBg: white;
-$darkColor: #333;
-
-$lightBg: #333;
-$lightColor: white;
+@import "styles/variables.scss";
 
 .circleContainer {
   position: absolute;
@@ -23,8 +19,14 @@ $lightColor: white;
   justify-content: center;
   align-items: center;
   transition: all 0.4s;
-  background-color: white;
-  color: $darkColor;
+  background-color: $darkColor;
+  color: $darkAccent;
+
+  &:hover {
+    background-color: $darkAccent;
+    border: 1px solid $darkColor;
+    color: $darkColor;
+  }
 
   &.light {
     background-color: $lightBg;
@@ -34,5 +36,6 @@ $lightColor: white;
   &.active {
     background-color: $darkColor;
     color: $darkBg;
+    border: 1px solid $darkAccent !important;
   }
 }
