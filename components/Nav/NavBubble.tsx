@@ -18,9 +18,16 @@ const NavBubble: FunctionComponent<NavBubbleProps> = () => {
     <div className={styles.circleContainer}>
       <NavRing
         active={active}
+        ringNum={4}
+        text="Contact"
+        to="/contact"
+        click={closeBubble}
+      />
+      <NavRing
+        active={active}
         ringNum={3}
-        text="Info"
-        to="/info"
+        text="Skills"
+        to="/skills"
         click={closeBubble}
       />
       <NavRing
