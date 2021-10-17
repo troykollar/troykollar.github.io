@@ -6,6 +6,23 @@ body {
   margin: 0;
   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.4s;
+
+  &:hover {
+    color: black !important;
+    background-color: white;
+    padding: 4px;
+    font-size: 18px;
+    transform: scale(2);
+  }
 }
 
 .nav-bar {

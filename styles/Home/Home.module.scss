@@ -1,5 +1,21 @@
 .home {
-  padding-top: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+
+  .selfImg {
+    border-radius: 50%;
+    height: 50vw;
+    max-height: 250px;
+  }
+
+  .description {
+    margin-top: 24px;
+    p {
+      margin-top: 24px;
+      max-width: 700px;
+    }
+  }
 }
