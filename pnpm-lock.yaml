@@ -7,14 +7,18 @@ specifiers:
   react: ^17.0.2
   react-dom: ^17.0.2
   react-icons: ^4.3.1
+  react-useinterval: ^1.0.2
   sass: ^1.43.2
+  usetimeout-react-hook: ^0.1.2
 
 dependencies:
   next: 11.1.2_0f2fd6b33f6a1fbafc35fb025cab224e
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-icons: 4.3.1_react@17.0.2
+  react-useinterval: 1.0.2_react@17.0.2
   sass: 1.43.2
+  usetimeout-react-hook: 0.1.2_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
   '@types/react': 17.0.30
@@ -1521,6 +1525,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /react-useinterval/1.0.2_react@17.0.2:
+    resolution: {integrity: sha512-aC0ATWbm1HaQjp7ILQzn6qge0K70cAgVzIhdUtDXPo9ho7W84MJ7/KOJIKMoi1hFwMp8lQDMYuVUDDk/3mn6sw==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      react: 17.0.2
+    dev: false
+
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
     engines: {node: '>=0.10.0'}
@@ -1876,6 +1888,16 @@ packages:
     dependencies:
       object-assign: 4.1.1
       react: 17.0.2
+    dev: false
+
+  /usetimeout-react-hook/0.1.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-uHc8QsWDznEhWkK+ygX0xWxyObRjy72685EZ5wr3/ipNsK0EYntGnbenKxLNirPKKsng+1KW5CPTAk7qQDY8VQ==}
+    peerDependencies:
+      react: ^16.8.0
+      react-dom: ^16.8.0
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /util-deprecate/1.0.2:

@@ -12,7 +12,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "sass": "^1.43.2"
+    "react-useinterval": "^1.0.2",
+    "sass": "^1.43.2",
+    "usetimeout-react-hook": "^0.1.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.30",
