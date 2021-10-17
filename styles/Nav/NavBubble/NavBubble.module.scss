@@ -34,8 +34,7 @@
   }
 
   &.active {
-    background-color: $darkColor;
-    color: $darkBg;
-    border: 1px solid $darkAccent !important;
+    background-color: $darkAccent;
+    color: $darkColor;
   }
 }
