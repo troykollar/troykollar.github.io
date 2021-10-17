@@ -1,12 +1,9 @@
 import Ima from "components/Ima";
 import type { NextPage } from "next";
 import Link from "next/dist/client/link";
-import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home/Home.module.scss";
 
 import selfImg from "../assets/self.jpg";
-import Footer from "components/Footer/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -66,8 +63,6 @@ const Home: NextPage = () => {
           <Link href="/work">Work</Link>&nbsp;tab.
         </p>
       </section>
-
-      <Footer />
     </div>
   );
 };

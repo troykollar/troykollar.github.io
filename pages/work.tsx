@@ -51,7 +51,6 @@ const Home: NextPage = () => {
         ]}
         img={capImg}
       />
-      <Footer />
     </div>
   );
 };

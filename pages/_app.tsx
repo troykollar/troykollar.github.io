@@ -4,6 +4,7 @@ import { RiMoonLine } from "react-icons/ri";
 
 import NavBubble from "../components/Nav/NavBubble";
 import Name from "../components/Nav/Name";
+import Footer from "components/Footer/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </div>
       <div className="main">
         <Component {...pageProps} />
+        <Footer />
       </div>
     </div>
   );
