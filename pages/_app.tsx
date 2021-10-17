@@ -12,7 +12,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="nav-bar dark">
         <Name text="Troy Kollar" />
         <NavBubble />
-        <RiMoonLine size={40} />
+        <div></div>
+        {/* <RiMoonLine size={40} /> */}
       </div>
       <div className="main">
         <Component {...pageProps} />
