@@ -1,19 +1,21 @@
 @import "styles/variables.scss";
 
 .projectCard {
-  margin: 24px;
   padding: 24px;
   border-radius: 24px;
   background-color: $darkAccent;
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
 
   display: flex;
   justify-content: stretch;
   align-items: center;
 
-  $breakpoint: 975px;
   transition: box-shadow 0.4s;
+
+  &:not(:first-child) {
+    margin-top: 24px;
+  }
 
   .title {
     text-align: center;
