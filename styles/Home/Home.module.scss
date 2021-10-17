@@ -14,8 +14,24 @@
   .description {
     margin-top: 24px;
     p {
+      font-size: 18px;
       margin-top: 24px;
       max-width: 700px;
+
+      a {
+        color: white !important;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: all 0.4s;
+
+        &:hover {
+          color: black !important;
+          background-color: white;
+          padding: 4px;
+          font-size: 18px;
+          transform: scale(2);
+        }
+      }
     }
   }
 }
