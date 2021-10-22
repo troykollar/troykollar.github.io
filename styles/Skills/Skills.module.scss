@@ -1,0 +1,17 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 24px;
+  .skillBubbleContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

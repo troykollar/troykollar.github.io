@@ -1,0 +1,29 @@
+@import "styles/variables.scss";
+
+.skillBubble {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $darkAccent;
+  color: $darkColor;
+  padding: 18px;
+  $size: 112px;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: 2px solid #333;
+  margin: 12px;
+
+  transition: all 0.2s;
+
+  &:hover {
+    border-radius: 25%;
+    border: 2px solid white;
+  }
+
+  .title {
+    text-align: center;
+  }
+}
