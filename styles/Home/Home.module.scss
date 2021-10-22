@@ -1,3 +1,4 @@
+@import "styles/variables.scss";
 .home {
   display: flex;
   flex-direction: column;
@@ -5,9 +6,17 @@
   align-items: center;
 
   .selfImg {
+    box-sizing: border-box;
     border-radius: 50%;
     height: 50vw;
     max-height: 250px;
+    border: 2px solid $darkBg;
+    transition: all 0.2s;
+
+    &:hover {
+      border-radius: 25%;
+      border: 2px solid white;
+    }
   }
 
   .description {
