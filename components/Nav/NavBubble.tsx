@@ -5,51 +5,41 @@ import styles from "../../styles/Nav/NavBubble/NavBubble.module.scss";
 import { NavRing } from "./NavRing";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 
-interface NavBubbleProps {
-  active: boolean;
-  closeBubble: React.MouseEventHandler;
-  click: React.MouseEventHandler;
-}
+interface NavBubbleProps {}
 
-const NavBubble: FunctionComponent<NavBubbleProps> = ({
-  closeBubble,
-  active,
-  click,
-}) => {
+const NavBubble: FunctionComponent<NavBubbleProps> = ({}) => {
+  const [active, setActive] = useState(false);
   return (
-    <div className={styles.circleContainer}>
-      <NavRing
-        active={active}
-        ringNum={4}
-        text="Contact"
-        to="/contact"
-        click={closeBubble}
-      />
+    <div
+      className={styles.circleContainer}
+      onMouseEnter={() => setActive(true)}
+      onMouseLeave={() => setActive(false)}
+    >
       <NavRing
         active={active}
         ringNum={3}
         text="Skills"
         to="/skills"
-        click={closeBubble}
+        click={() => setActive(false)}
       />
       <NavRing
         active={active}
         ringNum={2}
         text="Work"
         to="/work"
-        click={closeBubble}
+        click={() => setActive(false)}
       />
       <NavRing
         active={active}
         ringNum={1}
         text="Home"
         to="/"
-        click={closeBubble}
+        click={() => setActive(false)}
       />
 
       <div
+        onClick={() => setActive(!active)}
         className={`${styles.navBubble} ${active ? styles.active : ""}`}
-        onClick={click}
       >
         {!active && <RiMenuLine size={20} />}
         {active && <RiCloseLine size={30} />}
