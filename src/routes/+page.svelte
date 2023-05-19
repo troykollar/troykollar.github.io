@@ -22,13 +22,13 @@
 				experience.
 			</p>
 			<div class="flex gap-4">
-				<IconButton href="https://github.com/troykollar">
+				<IconButton href="https://github.com/troykollar" ariaLabel="GitHub">
 					<Github />
 				</IconButton>
-				<IconButton href="https://www.linkedin.com/in/troy-kollar/">
+				<IconButton href="https://www.linkedin.com/in/troy-kollar/" ariaLabel="LinkedIn">
 					<Linkedin />
 				</IconButton>
-				<IconButton href="mailto:troykollar@gmail.com">
+				<IconButton href="mailto:troykollar@gmail.com" ariaLabel="Email">
 					<Mail />
 				</IconButton>
 			</div>
